@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="style.css">
+ 
+    <title>Document</title>
+</head>
+<style>
+  nav{
+padding-top: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+
+ 
+}
+span{
+   color: rgb(42, 165, 159);
+   font-size: xx-large;
+   font-weight: bold;
+   font-style:initial ;
+   
+}
+ 
+.logo{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-size: xx-large;
+ padding-left: 40px;
+ 
+ 
+
+}
+
+nav ul li{
+
+   list-style-type: none;
+   display: inline-block;
+   padding: 10px 20px;
+   
+}
+
+nav ul li a{
+   color: rgb(0, 0, 0);
+   font-weight: bold;
+   text-decoration: none;
+
+}
+
+nav ul li a:hover{
+   color: rgb(0, 162, 255);
+    transition: .3s;
+}
+
+.container{
+  margin-top: 70px;
+  margin-left: 200px;
+}
+ 
+.button2 {background-color: #008CBA;
+  border: solid 1px;
+  border-radius: 5px;
+}
+ 
+</style>
+<body >
+  <div class="container-fluid">
+    <div class="navsection">
+   <nav> 
+      <h3 class="logo"> Personal <span> blog </span></h3>
+    <ul>
+      <li> <a href="http://127.0.0.1:5500/index.html"> Home</a></li>
+        <li> <a href="http://127.0.0.1:5500/about/about.html"> About</a> </li>
+          <li>  <a href="http://127.0.0.1:5500/contact/contect.html"> Contact us</a> </li>
+            <li>  <a href="#">  Blogs</a> </li>
+    </ul>
+   </nav>
+  </div> 
+   <!-- ======= Contact Section ======= -->
+   
+   <section id="contact" class="contact section-bg">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-right">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name"> <strong>Name</strong> </label>
+                <input type="text" name="name" class="form-control" id="name" required placeholder="Enter your name here">
+              </div>
+              <div class="form-group col-md-6 mt-3 mt-md-0">
+                <label for="name"> <strong>Email</strong></label>
+                <input type="email" class="form-control" name="email" id="email" required placeholder="Enter your email here">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name"><strong>Subject</strong></label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="name"><strong>Message</strong></label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading"><strong>Loading...</strong></div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <button class="button button2">Submit </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+
+
+</body>
+</html>
